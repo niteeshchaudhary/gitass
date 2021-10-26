@@ -127,7 +127,7 @@ svg {
    <div class="container"> 
     <div class="form"> 
       <h2>Sign Up to truPen</h2>
-      <form method="POST" name="signup" action="student_dashboard/student_profile.html" onsubmit="return validateForm()">
+      <form onsubmit="return validateForm()">
         <div class="inputBx">
           <input type="text" name="LoginID" id = "LoginID" onfocusout="checkdb()" autocomplete="off" required="required">
           <p class="user-avail"><svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" text-rendering="optimizeSpeed" style="visibility: visible;">
@@ -180,7 +180,7 @@ svg {
           <p id="error"></p>
         </div>
         <div class="inputBx">
-            <input type = "submit" value="Sign Up" id="submit"> 
+          <a href="student_dashboard/student_profile.html"><input type = "submit" value="Sign Up" id="submit"> </a>
         </div>
       </form>
       <p>Already have an Account ? <a href="stu_login.html">Log-in</a></p>
